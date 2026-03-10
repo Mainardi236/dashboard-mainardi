@@ -1,0 +1,109 @@
+:root{
+  --bg:#f4f6f8;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#2b6cb0;
+  --border:#e6eaee;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background:var(--bg);
+  color:#111827;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:24px;
+}
+
+.container{
+  max-width:920px;
+  margin:24px auto;
+  background:var(--card);
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 8px 30px rgba(15,23,42,0.06);
+  border:1px solid rgba(0,0,0,0.03);
+}
+
+h1{
+  margin:0 0 16px 0;
+  font-size:1.125rem;
+  color:#0f172a;
+}
+
+.info-table{
+  width:100%;
+  border-collapse:collapse;
+  background:transparent;
+  overflow:hidden;
+  border-radius:6px;
+}
+
+.info-table thead th{
+  text-align:left;
+  font-weight:600;
+  padding:12px 14px;
+  font-size:0.95rem;
+  background:linear-gradient(180deg, rgba(0,0,0,0.02), transparent);
+  border-bottom:1px solid var(--border);
+  color:var(--muted);
+}
+
+.info-table td{
+  padding:12px 14px;
+  font-size:0.95rem;
+  border-bottom:1px solid var(--border);
+  vertical-align:middle;
+  color:#111827;
+}
+
+.info-table tbody tr:hover td{
+  background:#fbfdff;
+}
+
+.info-table code{
+  background:#f1f5f9;
+  padding:2px 6px;
+  border-radius:4px;
+  font-family:monospace;
+  font-size:0.9em;
+}
+
+.btn{
+  display:inline-block;
+  padding:8px 12px;
+  background:var(--accent);
+  color:#fff;
+  text-decoration:none;
+  border-radius:6px;
+  font-size:0.9rem;
+  border:1px solid rgba(0,0,0,0.05);
+}
+
+.notice{
+  padding:12px 14px;
+  background:#fff3cd;
+  border:1px solid #ffeeba;
+  color:#856404;
+  border-radius:8px;
+  font-size:0.95rem;
+}
+
+@media (max-width:600px){
+  .container{ padding:14px; }
+  .info-table thead{ display:none; }
+  .info-table, .info-table tbody, .info-table tr, .info-table td{ display:block; width:100%; }
+  .info-table tr{ margin-bottom:12px; border-bottom:1px solid var(--border); padding-bottom:8px; }
+  .info-table td{ padding:8px 6px; }
+  .info-table td::before{
+    content:attr(data-label);
+    font-weight:600;
+    display:block;
+    color:var(--muted);
+    margin-bottom:6px;
+  }
+}
+
+/* então eric, pedi uma ajuda pro chatgpt pra melhorar o css, e ele me deu isso, achei que ficou bem melhor */
