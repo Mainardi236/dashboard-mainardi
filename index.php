@@ -15,9 +15,9 @@
 <h2>Dashboard</h2>
 
 <ul>
-<li><a href="#">Home</a></li>
+<li><a href="index.php">Home</a></li>
 <li><a href="#">Relatórios</a></li>
-<li><a href="#">Usuários</a></li>
+<li><a href="usuarios.php">Usuários</a></li>
 <li><a href="#">Configurações</a></li>
 </ul>
 
